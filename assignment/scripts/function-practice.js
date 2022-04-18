@@ -55,6 +55,7 @@ console.log('isPositive - should say false', isPositive(-3));
 //    array is empty, return `undefined`.
 let names = ['Joey', 'Ashlee', 'Des', 'Dustin'];
 let names2 = ['Matt', 'Marisha', 'Liam', 'Sam', 'Ashley', 'Laura', 'Travis'];
+let names3 = [];
 
 function getLast(array) {
   return array[array.length-1];
@@ -62,6 +63,7 @@ function getLast(array) {
 
 console.log(getLast(names));
 console.log(getLast(names2));
+console.log(getLast(names3));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;

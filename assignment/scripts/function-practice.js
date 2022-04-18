@@ -114,11 +114,30 @@ console.log(sumAll(addAll2));
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 let num10 = [1, 2, 3, -3, -2, -1]
-function trackPositive(array){
-  
+let num11 = [1, -3, 5, -7, 9, -11, 13, -15, 17, -19, 20]
+function trackPositive(num){
+  return num>0;
 }
-
+console.log(num10.filter(trackPositive))
+console.log(num11.filter(trackPositive))
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+/*On Codewars I picked the Categorize New Member challenge. In this challenge
+ I am helping with a new application form that will tell new members with category they will be place. 
+ The two categories are senior or open. In order to be in the senior category you need to be 55+
+ as well as have a handicap greater than 7. Else are you are in the open category.*/
+
+function placement(age, handicap){
+  if(age>=55 && handicap>7){
+    return 'Senior';
+  }
+  return 'Open';
+}
+
+console.log('You will be placed in', placement(59, 10));
+console.log('You will be placed in', placement(85, 7));
+console.log('You will be placed in', placement(55, 8));
+console.log('You will be placed in', placement(18, 6));
+console.log('You will be placed in', placement(30, 15));

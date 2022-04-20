@@ -71,7 +71,7 @@ console.log('Testing my getLast function, should say undefined:', getLast(names3
 let testNumbers = [2, 3, 6, -10, 0, 55, 26, 97]
 
 function find( value, array ){
-  for(i=0; i<array.length-1; i++){
+  for(let i=0; i<array.length-1; i++){
     if(value === array[i]){
       return true;
     }
@@ -103,7 +103,7 @@ let addAll2 = [5, 6, 10, 33, -27, 123, 321, 900, -99]
 function sumAll(array){
   let sum = 0
   // TODO: loop to add items
-  for(i=0; i<=array.length-1; i++){
+  for(let i=0; i<=array.length-1; i++){
     sum += array[i];
   }
   return sum;

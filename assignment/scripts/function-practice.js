@@ -115,13 +115,15 @@ console.log(sumAll(addAll2));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-let num10 = [1, 2, 3, -3, -2, -1]
-let num11 = [1, -3, 5, -7, 9, -11, 13, -15, 17, -19, 20]
+let num10 = [1, 2, 3, -3, -2, -1];
+let num11 = [1, -3, 5, -7, 9, -11, 13, -15, 17, -19, 20];
+let num13 = [-3, -10, -13];
 function trackPositive(num){
   return num>0;
 }
-console.log(num10.filter(trackPositive))
-console.log(num11.filter(trackPositive))
+console.log(num10.filter(trackPositive));
+console.log(num11.filter(trackPositive));
+console.log(num13.filter(trackPositive));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 

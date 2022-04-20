@@ -61,9 +61,9 @@ function getLast(array) {
   return array[array.length-1];
 }
 
-console.log(getLast(names));
-console.log(getLast(names2));
-console.log(getLast(names3));
+console.log('Testing my getLast function, should say Dustin:', getLast(names));
+console.log('Testing my getLast function, should say Dustin:', getLast(names2));
+console.log('Testing my getLast function, should say undefined:', getLast(names3));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
@@ -79,8 +79,8 @@ function find( value, array ){
   return false;
 }
 
-console.log(find(100, testNumbers));
-console.log(find(55, testNumbers));
+console.log('Testing find function. Should show false as 100 is not in the list:', find(100, testNumbers));
+console.log('Testing find function, should show true as 55 is in the list:', find(55, testNumbers));
 
 
 // ----------------------
@@ -108,9 +108,9 @@ function sumAll(array){
   }
   return sum;
 }
-console.log(sumAll(testNumbers));
-console.log(sumAll(addAll));
-console.log(sumAll(addAll2));
+console.log('Testing sumAll function, should show 179 being the sum of testNumbers:', sumAll(testNumbers));
+console.log('Testing sumAll function, should show 30 being the sum of addAll:', sumAll(addAll));
+console.log('Testing sumAll function, should show 1272 being the sum of addAll2:', sumAll(addAll2));
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
@@ -121,9 +121,9 @@ let num13 = [-3, -10, -13];
 function trackPositive(num){
   return num>0;
 }
-console.log(num10.filter(trackPositive));
-console.log(num11.filter(trackPositive));
-console.log(num13.filter(trackPositive));
+console.log('Testing trackPositive function, should have an array with 1, 2, 3:', num10.filter(trackPositive));
+console.log('Testing trackPositive function, should have an array with 1, 5, 9, 13, 17, 20:', num11.filter(trackPositive));
+console.log('Testing trackPositive function, should have an empty array being there are no positive numbers in num13:', num13.filter(trackPositive));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
@@ -139,7 +139,7 @@ function placement(age, handicap){
   }
   return 'Open';
 }
-
+console.log('Below I am testing my placement function, We are taking in age and handicap to see where they should be placed in our "sports" club:')
 console.log('You will be placed in', placement(59, 10));
 console.log('You will be placed in', placement(85, 7));
 console.log('You will be placed in', placement(55, 8));
